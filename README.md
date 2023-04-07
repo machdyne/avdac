@@ -23,6 +23,8 @@ Assuming they are installed, you can simply type `make` to build the gateware, w
 
 ## Pinout
 
+### PMOD
+
 | Signal | Pin |
 | ------ | --- |
 | AUD\_DIN | 1 |
@@ -37,3 +39,12 @@ Assuming they are installed, you can simply type `make` to build the gateware, w
 | VID\_D4 | 10 |
 | GND | 11 |
 | 3V3 | 12 |
+
+### 3.5mm TRRS Audio Jack
+
+| Signal | Pin |
+| ------ | --- |
+| Left Audio | T |
+| Right Audio | R1 |
+| Ground | R2 |
+| Video | S |
