@@ -1,0 +1,22 @@
+# Riegel V3
+# ---------
+
+set_io CLK_48	L5
+
+# AVDAC PMOD on PMODA
+set_io AUD_DIN J5
+set_io AUD_WS  L1
+set_io AUD_BCK J3
+set_io VID_D0  G3
+set_io VID_D1  L2
+set_io VID_D2  K5
+set_io VID_D3  H3
+set_io VID_D4  H7
+
+# MMOD/SD SPI BUS
+set_io SPI_SS_FLASH  K10
+set_io SPI_SS_SD     K6
+set_io SPI_SCK       L10
+set_io SPI_MISO      J9    # CSPI_SI
+set_io SPI_MOSI      K9    # CSPI_SO
+
