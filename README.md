@@ -2,6 +2,8 @@
 
 AVDAC is a 12-pin Pmod™ compatible module with a 16-bit stereo audio DAC and a 5-bit video DAC.
 
+![AVDAC](https://github.com/machdyne/AVDAC/blob/388016643eea4f7693c8ceec7313cb7d4b44f4a2/avdac.png)
+
 This repo contains schematics, pinouts and example gateware.
 
 ## Verilog Demo
