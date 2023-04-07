@@ -8,7 +8,7 @@ This repo contains schematics, pinouts and example gateware.
 
 ## Verilog Demo
 
-The demo plays 5 seconds of 48KHz 16-bit (LE) signed PCM stereo audio from flash memory.
+The demo plays a loop of 5 seconds of 48KHz 16-bit (LE) signed PCM stereo audio from flash memory.
 
 An example of video output will be added soon, in the meantime please see the resources section below.
 
