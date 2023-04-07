@@ -14,7 +14,7 @@ An example of video output will be added soon, in the meantime please see the re
 
 Building the example requires [Yosys](https://github.com/YosysHQ/yosys), [nextpnr-ice40](https://github.com/YosysHQ/nextpnr) and [IceStorm](https://github.com/YosysHQ/icestorm).
 
-Assuming they are installed, you can simply type `make` to build the gateware, which will be written to output/count.bin. This example targets the Schoko and Riegel FPGA boards but can be easily adapted to other FPGA boards with a 12-pin PMOD connector.
+Assuming they are installed, you can simply type `make` to build the gateware, which will be written to output/avdac.bin. This example targets the Schoko and Riegel FPGA boards but can be easily adapted to other FPGA boards with a 12-pin PMOD connector.
 
 ## Resources
 
