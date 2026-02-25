@@ -15,11 +15,20 @@ avdac_schoko:
 	nextpnr-ecp5 --45k --package CABGA256 --lpf boards/schoko.lpf --json output/avdac.json --textcfg output/avdac_out.config
 	ecppack -v --compress --freq 2.4 output/avdac_out.config --bit output/avdac.bit
 
+avdac_mozart_ml1:
+	mkdir -p output
+	yosys -DECP5 -q -p "synth_ecp5 -top avdac -json output/avdac.json" $(RTL)
+	nextpnr-ecp5 --45k --package CABGA256 --lpf boards/mozart_ml1.lpf --json output/avdac.json --textcfg output/avdac_out.config
+	ecppack -v --compress --freq 2.4 output/avdac_out.config --bit output/avdac.bit
+
 prog_schoko:
 	openFPGALoader -c usb-blaster output/avdac.bit
 
 prog_riegel:
 	ldprog -s output/avdac.bin
+
+prog_mozart_ml1:
+	openFPGALoader -c dirtyJtag output/avdac.bit
 
 gen_sine:
 	ffmpeg -f lavfi -i "sine=frequency=1000:duration=5" -ac 2 -ar 48000 -f s16le -c:a pcm_s16le sine.pcm
